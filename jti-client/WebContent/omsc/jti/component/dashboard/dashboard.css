@@ -1,0 +1,629 @@
+/* store_infor ==================================================================================================== */
+.store_infor {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 111px;
+    height: 86%;
+    border-left: 1px solid #999;
+    background: #FFF;
+    z-index: 1500;
+}
+
+/* section_top ============================== */
+
+.store_infor .section_top {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* article_top ========== */
+
+.store_infor .article_top {
+    position: relative;
+}
+
+/* tit_main ========== */
+
+.store_infor .article_top .tit_main {
+    height: 28px;
+    line-height: 26px;
+    margin-bottom: 22px;
+    padding-left: 35px;
+    font-size: 1.385em;
+    font-weight: bold;
+    color: #333;
+    background: url("/omsc/jti/images/ic_title.png") no-repeat 0 0;
+}
+
+/* btn_close ========== */
+
+.store_infor .article_top .btn_close {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 27px;
+    height: 27px;
+    text-indent: -9999em;
+    background: url("/omsc/jti/images/btn_close_big.png") no-repeat 0 0;
+}
+
+/* layer btn 열기, 닫기 ============================== */
+
+.store_infor .layer_view_btn {}
+
+.store_infor .layer_view_btn .btn_view {
+    display: block;
+    position: fixed;
+    z-index: 333;
+    top: 50%;
+    margin-top: -51px;
+    width: 15px;
+    height: 102px;
+    text-indent: -9999em;
+}
+
+.store_infor .layer_view_btn .btn_view.open {
+    right: 0;
+    background: url("images/layer_side_btn_open.png") no-repeat center center;
+}
+
+.store_infor .layer_view_btn .btn_view.close {
+    right: 1240px;
+    background: url("images/layer_side_btn_close.png") no-repeat center center;
+}
+
+.store_infor.wide .layer_view_btn .btn_view {
+    display: none;
+}
+
+/* tab ============================== */
+
+.article_tab {}
+
+.article_tab ul {
+    border-bottom: 1px solid #8b8b8b;
+    *zoom: 1;
+}
+
+.article_tab ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_tab ul li {
+    float: left;
+}
+
+.article_tab ul li.on a {
+    margin-bottom: -1px;
+    border: 1px solid #8b8b8b;
+    border-bottom: 1px solid #FFF;
+    color: #007a58;
+}
+
+.article_tab ul li a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+}
+
+/* scroll ============================== */
+
+.store_infor .wrap_scroll {
+    height: 100%;
+    padding: 130px 20px 30px;
+    box-sizing: border-box;
+    *padding: 100px 20px 0;
+    font-family: "dotum";
+    font-size: 12px;
+}
+
+.store_infor .wrap_scroll .section_scroll {
+    overflow-y: scroll;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px 30px;
+    border: 1px solid #c3c3c3;
+    background: #f8f8f8;
+    *height: 75%;
+}
+
+/* code ============================== */
+
+.article_code {
+    margin: 0 0 10px 0;
+}
+
+.article_code dl {
+    *zoom: 1;
+}
+
+.article_code dl:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_code dl dt {
+    float: left;
+    margin-right: 0.4em;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.article_code dl dd {
+    float: left;
+    line-height: 22px;
+    font-family: "arial";
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* 공통박스 ============================== */
+
+.article_con {
+    box-sizing: border-box;
+    padding: 30px;
+    border: 1px solid #c3c3c3;
+    background: #FFF;
+    *zoom: 1;
+}
+
+.article_con:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* title */
+
+.article_con .tit_inner {
+    margin: 0 0 20px;
+    padding-left: 17px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    background: url("/omsc/jti/images/bul_circle_red.png") no-repeat 0 1px;
+}
+
+.tit_outter {
+    clear: both;
+    margin: 40px 0 8px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* code ============================== */
+
+.article_summary {
+    margin: 0 0 10px 0;
+}
+
+.article_summary ul {
+    *zoom: 1;
+}
+
+.article_summary ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_summary ul li {
+    float: left;
+    position: relative;
+    width: 142px;
+    height: 144px;
+    margin-left: 21px;
+    box-sizing: border-box;
+    border: 1px solid #c3c3c3;
+    text-align: center;
+}
+
+.article_summary ul li:first-child {
+    margin-left: 0;
+}
+
+.article_summary ul li .tit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    background: #242d38;
+}
+
+.article_summary ul li .txt {
+    margin: 8px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+}
+
+.article_summary ul li .txt span {
+    font-size: 12px;
+}
+
+.article_summary ul li .thm {}
+
+.article_summary ul li.cate1 .thm {
+    position: absolute;
+    left: 50%;
+    top: 52px;
+    width: 28px;
+    height: 21px;
+    margin-left: -14px;
+    background: url("images/icon_cate_01.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate2 .thm {
+    position: absolute;
+    left: 50%;
+    top: 52px;
+    width: 20px;
+    height: 28px;
+    margin-left: -10px;
+    background: url("images/icon_cate_02.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate3 .thm {
+    position: absolute;
+    left: 50%;
+    top: 54px;
+    width: 26px;
+    height: 22px;
+    margin-left: -14px;
+    background: url("images/icon_cate_03.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate5 .thm {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    width: 28px;
+    height: 29px;
+    margin-left: -14px;
+    background: url("images/icon_cate_05.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate4 .toggle {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    width: 54px;
+    height: 54px;
+    margin-left: -27px;
+    text-indent: -9999em;
+    background: url("images/icon_cate_04.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate6 .toggle {
+    position: absolute;
+    left: 50%;
+    top: 34px;
+    width: 55px;
+    height: 65px;
+    margin-left: -27px;
+    text-indent: -9999em;
+    background: url("images/icon_cate_06.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate4 .toggle.on {
+    background: url("images/icon_cate_04_on.png") no-repeat 0 0;
+}
+
+.article_summary ul li.cate6 .toggle.on {
+    background: url("images/icon_cate_06_on.png") no-repeat 0 0;
+}
+
+.article_summary ul li .grade_chart {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 68px;
+    height: 68px;
+    margin-left: -34px;
+    text-indent: -9999em;
+}
+
+.article_summary ul li .grade_chart.grade1 {
+    background: url("images/grade_05.png") no-repeat 0 0;
+}
+
+.article_summary ul li .grade_chart.grade2 {
+    background: url("images/grade_04.png") no-repeat 0 0;
+}
+
+.article_summary ul li .grade_chart.grade3 {
+    background: url("images/grade_03.png") no-repeat 0 0;
+}
+
+.article_summary ul li .grade_chart.grade4 {
+    background: url("images/grade_02.png") no-repeat 0 0;
+}
+
+.article_summary ul li .grade_chart.grade5 {
+    background: url("images/grade_01.png") no-repeat 0 0;
+}
+
+.article_summary ul li .grade_num {
+    line-height: 1;
+    margin-top: 10px;
+    font-family: arial;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.article_summary ul li .grade_num.grade1 {
+    color: #e81716;
+}
+
+.article_summary ul li .grade_num.grade2 {
+    color: #ff5a0a;
+}
+
+.article_summary ul li .grade_num.grade3 {
+    color: #ff9300;
+}
+
+.article_summary ul li .grade_num.grade4 {
+    color: #aea200;
+}
+
+.article_summary ul li .grade_num.grade5 {
+    color: #47a300;
+}
+
+/* article_population ============================== */
+
+.article_population {}
+
+.article_population .group_lft {
+    float: left;
+}
+
+.article_population .group_rgt {
+    float: left;
+    padding-left: 30px;
+    border-left: 1px solid #CCC;
+}
+
+.article_population .chart1 {
+    float: left;
+    width: 300px;
+    height: 250px;
+    margin-right: 30px;
+    border: 1px solid #EEE;
+}
+
+.article_population .chart2 {
+    width: 350px;
+    height: 250px;
+    border: 1px solid #EEE;
+}
+
+/* article_area ============================== */
+
+.article_area {}
+
+.article_area .group_top {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c3c3c3;
+    *zoom: 1;
+}
+
+.article_area .group_top:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_area .group_btm {}
+
+.article_area .chart1 {
+    float: left;
+    width: 320px;
+    height: 250px;
+    margin-right: 30px;
+    border: 1px solid #EEE;
+}
+
+.article_area .chart2 {
+    float: left;
+    width: 320px;
+    height: 250px;
+    margin-left: 30px;
+    border: 1px solid #EEE;
+}
+
+.article_area .chart2:first-child {
+    margin-left: 0;
+    border: 1px solid red;
+}
+
+/* infor_area ========== */
+
+.article_area .infor_area {
+    padding: 20px;
+    border: 1px solid #EEE;
+    text-align: center;
+    background: #fcfcfc;
+    *zoom: 1;
+}
+
+.article_area .infor_area:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_area .infor_area dl {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.article_area .infor_area dl dt {
+    padding: 5px 20px 10px;
+    border-bottom: 1px solid #6b747f;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.article_area .infor_area dl dd {
+    text-align: center;
+}
+
+/* 지하철 */
+
+.article_area .infor_area dl.subway {}
+
+.article_area .infor_area dl.subway dt {}
+
+.article_area .infor_area dl.subway dd {
+    padding: 18px 30px 10px;
+}
+
+.article_area .infor_area dl.subway dd .cnt {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 22px 0 0;
+    font-family: "arial";
+    font-size: 45px;
+    font-weight: bold;
+    color: #00b0f0;
+    vertical-align: middle;
+    background: url("images/bar_gray_34.gif") no-repeat right 5px;
+}
+
+.article_area .infor_area dl.subway dd .list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.article_area .infor_area dl.subway dd .list li {
+    line-height: 1.2;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+/* 버스 */
+
+.article_area .infor_area dl.bus {}
+
+.article_area .infor_area dl.bus dt {}
+
+.article_area .infor_area dl.bus dd {
+    padding: 18px 30px 10px;
+}
+
+.article_area .infor_area dl.bus dd .cnt {
+    font-family: "arial";
+    font-size: 45px;
+    font-weight: bold;
+    color: #ff5050;
+}
+
+/* 대학교 */
+
+.article_area .infor_area dl.university {
+    width: 430px;
+}
+
+.article_area .infor_area dl.university dt {}
+
+.article_area .infor_area dl.university dd {}
+
+.article_area .infor_area dl.university dd table {
+    width: 100%;
+}
+
+.article_area .infor_area dl.university dd table th {
+    height: 15px;
+    padding: 6px 8px 4px;
+    border: 1px solid #CCC;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    background: #eaeaea;
+}
+
+.article_area .infor_area dl.university dd table td {
+    height: 15px;
+    padding: 6px 8px 4px;
+    border: 1px solid #CCC;
+    text-align: center;
+    color: #666;
+    background: #FFF;
+}
+
+/* article_commercial ============================== */
+
+.article_commercial {
+    *zoom: 1;
+}
+
+.article_commercial:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_commercial .tit {
+    clear: both;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.article_commercial .group_lft {
+    float: left;
+    margin-left: 30px;
+    border-right: 1px solid #c3c3c3;
+}
+
+.article_commercial .group_rgt {
+    float: left;
+    margin-left: 60px;
+}
+
+.article_commercial .group_lft .chart1 {
+    margin-right: 60px;
+}
+
+.article_commercial .group_lft .chart1:first-child {
+    margin-bottom: 40px;
+}
+
+.article_commercial .group_rgt .chart1 {}
+
+.article_commercial .group_rgt .chart1:first-child {
+    margin-bottom: 40px;
+}
+
+.article_commercial .chart1 {
+    width: 430px;
+    height: 280px;
+    border: 1px solid #EEE;
+}

@@ -1,0 +1,219 @@
+#flowpop {
+    background-color: #FFF;
+    width: 100%;
+    border-right: #333 1px solid;
+    bottom: 0;
+    height: 100%;
+    display: none;
+}
+
+/* article_top ============================== */
+
+#flowpop .article_top {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 0 20px;
+}
+
+/* tit_main ========== */
+
+#flowpop .article_top .tit_main {
+    height: 28px;
+    line-height: 26px;
+    margin: 17px 0px 22px -7px;
+    padding-left: 35px;
+    font-size: 1.385em;
+    font-weight: bold;
+    color: #333;
+    background: url("/omsc/jti/images/ic_title.png") no-repeat 0 0;
+}
+
+/* btn_close ========== */
+
+#flowpop .article_top .btn_close {
+    z-index: 9999;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 27px;
+    height: 27px;
+    text-indent: -9999em;
+    background: url("/omsc/jti/images/btn_close_big.png") no-repeat 0 0;
+}
+
+/* area_btn ========== */
+
+#flowpop .article_top .area_btn {
+    cursor: pointer;
+}
+
+#flowpop .article_top .area_btn .btn_add_big {
+    display: block;
+    text-align: center;
+    background: #8b8b8b;
+}
+
+#flowpop .article_top .area_btn .btn_add_big>span {
+    display: inline-block;
+    height: 38px;
+    line-height: 37px;
+    padding-left: 32px;
+    font-size: 1.154em;
+    font-weight: bold;
+    color: #FFF;
+    background: url("/omsc/jti/images/ic_add_big.png") no-repeat 0 center;
+    *zoom: 1;
+}
+
+#flowpop .article_top .area_btn .top {
+    margin-bottom: 7px;
+}
+
+/* scroll ============================== */
+
+#flowpop .scroll_outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 135px 0 0;
+    box-sizing: border-box;
+}
+
+.flow_cont {
+    overflow-y: scroll;
+    height: 100%;
+    margin: 0 0 0 10px;
+    border-top: 1px solid #999;
+}
+
+.flow_cont::-webkit-scrollbar {
+    width: 8px;
+    background-color: #EEE;
+}
+
+.flow_cont::-webkit-scrollbar-thumb {
+    background-color: #CCC;
+    border-radius: 10px;
+}
+
+.flow_cont::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.flow_cont::-webkit-scrollbar-thumb:active {
+    background-color: #555;
+}
+
+#flowpop .article_top .area_btn .onoff {
+    margin: 0 auto;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #d2d2d2;
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 200%;
+}
+
+#flowpop .article_top .area_btn .onoff .off {
+    width: 50%;
+    height: 32px;
+    text-align: center;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#flowpop .article_top .area_btn .onoff .on {
+    width: 50%;
+    height: 32px;
+    text-align: center;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#flowpop .article_top .area_btn .onoff .on:hover:not(.active), .off:hover:not(.active) {
+    color: yellow;
+}
+
+#flowpop .article_top .area_btn .onoff .off.active {
+    border-radius: 5px 0px 0px 5px;
+    background-color: #df514c;
+    cursor: initial;
+}
+
+#flowpop .article_top .area_btn .onoff .on.active {
+    border-radius: 0px 5px 5px 0px;
+    background-color: #df514c;
+    cursor: initial;
+}
+
+/* button list ============================== */
+
+#flowpop .flowpop.title {
+    color: #434343;
+    width: 36px;
+    float: left;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+#flowpop .age .flowpop.buttons {
+    float: left;
+    padding: 10px 15px;
+}
+
+#flowpop .age .flowpop.buttons img {
+    padding: 3px 10px;
+}
+
+#flowpop .time .flowpop.buttons {
+    float: left;
+    padding: 15px 25px;
+}
+
+#flowpop .time .flowpop.buttons img {
+    margin-bottom: 9px;
+}
+
+#flowpopLegend {
+    position: fixed;
+    left: 352px;
+    top: 113px;
+    width: 322px;
+    height: 52px;
+    background: white;
+    border: 2px solid black;
+}
+
+#flowpopLegend div {
+    width: 100%;
+    height: 100%;
+    margin: 13px 0 0 10px;
+}
+
+#flowpopLegend span {
+    float: left;
+    padding: 4px;
+    margin: 0 10px 0 10px;
+}
+
+#flowpopLegend ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#flowpopLegend li {
+    height: 19px;
+    margin: 1px;
+    width: 36px;
+    border: 1px solid black;
+    float: left;
+}

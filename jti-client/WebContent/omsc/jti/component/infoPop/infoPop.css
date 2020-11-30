@@ -1,0 +1,240 @@
+/* store_infor_pop ==================================================================================================== */
+
+.store_infor_pop {
+    padding: 20px;
+}
+
+/* section_top ============================== */
+
+.store_infor_pop .section_top {}
+
+/* article_top ========== */
+
+.store_infor_pop .article_top {
+    position: relative;
+}
+
+/* tit_main ========== */
+
+.store_infor_pop .article_top .tit_main {
+    font-size: 1.385em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* btn_close ========== */
+
+.store_infor_pop .article_top .btn_close {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 27px;
+    height: 27px;
+    text-indent: -9999em;
+    background: url("../selfmap/images/selfmap/btn_close_big.png") no-repeat 0 0;
+}
+
+/* section_btm ============================== */
+
+.section_btm {
+    text-align: center;
+}
+
+.section_btm a {
+    display: inline-block;
+    height: 28px;
+    line-height: 27px;
+    padding: 0 30px;
+    border: 1px solid #222;
+    color: #FFF !important;
+    background: #333;
+}
+
+/* article_store ============================== */
+
+.article_store {
+    margin: 20px 0 10px;
+}
+
+.article_store>.group_top {
+    margin-bottom: 5px;
+    *zoom: 1;
+}
+
+.article_store>.group_top:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.article_store>.group_top .tit {
+    float: left;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #333;
+}
+
+.article_store>.group_top .area_rgt {
+    float: right;
+}
+
+.article_store>.group_top .area_rgt a {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    border: 1px solid #222;
+    color: #FFF;
+    background: #333;
+}
+
+/* scroll ========== */
+
+.bx_scroll {
+    overflow-y: scroll;
+    box-sizing: border-box;
+    border: 1px solid #666;
+}
+
+.article_store.article_infor .bx_scroll {
+    height: 200px;
+}
+
+.article_store.article_comment .bx_scroll {
+    height: 94px;
+}
+
+/* 요약정보 ========== */
+
+.article_store.article_infor .bx_scroll table {}
+
+.article_store.article_infor .bx_scroll table th {
+    padding: 7px 5px 7px 10px;
+    border: solid #CCC;
+    border-width: 0 1px 1px 0;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+    background: #EEE;
+}
+
+.article_store.article_infor .bx_scroll table td {
+    padding: 7px 5px 7px 10px;
+    border: solid #CCC;
+    border-width: 0 0 1px 1px;
+}
+
+/* list_comment ============================== */
+
+.list_comment {}
+
+.list_comment>li {
+    margin: 5px 0;
+    padding: 15px 10px 5px;
+    border-top: 1px solid #999;
+    *zoom: 1;
+}
+
+.list_comment>li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list_comment>li:first-child {
+    margin-top: 0;
+    padding-top: 10px;
+    border-top: none;
+}
+
+/* group_top */
+
+.list_comment>li .group_top {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #CCC;
+    *zoom: 1;
+}
+
+.list_comment>li .group_top:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list_comment>li .group_top .tit {
+    float: left;
+    font-weight: bold;
+    color: #555;
+}
+
+.list_comment>li .group_top .date {
+    float: right;
+    font-size: 12px;
+    color: #999;
+}
+
+/* group_con */
+
+.list_comment>li .group_con {
+    position: relative;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #CCC;
+    *zoom: 1;
+}
+
+.list_comment>li .group_con:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list_comment>li .group_con .thm {
+    overflow: hidden;
+    float: left;
+    width: 50px;
+    height: 30px;
+    margin-right: 8px;
+    border: 1px solid #CCC;
+}
+
+.list_comment>li .group_con .thm img {}
+
+.list_comment>li .group_con .tit {
+    float: left;
+    line-height: 1.5;
+    padding-right: 10px;
+}
+
+/* group_btn */
+
+.list_comment>li .group_btn {
+    clear: both;
+    float: right;
+    *zoom: 1;
+}
+
+.list_comment>li .group_btn:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list_comment>li .group_btn li {
+    float: left;
+    margin-left: 3px;
+}
+
+.list_comment>li .group_btn li a {
+    display: block;
+    height: 15px;
+    line-height: 14px;
+    padding: 0 5px;
+    border: 1px solid #097299;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+    background: #0e9bd0;
+}

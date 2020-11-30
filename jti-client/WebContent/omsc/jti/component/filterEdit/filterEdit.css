@@ -1,0 +1,300 @@
+/* filter_edit ==================================================================================================== */
+.filter_edit {
+	overflow: hidden;
+	position: absolute;
+	z-index: 100;
+	left: 251px;
+	top: 0;
+	bottom: 85px;
+	width: 300px;
+	box-sizing: border-box;
+	border-right: 1px solid #999;
+	background: #FFF;
+	display: none;
+	height: 100%;
+}
+
+/* article_top ============================== */
+.filter_edit .article_top {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 19px 20px 11px 20px;
+	border-bottom: 1px solid #DDD;
+}
+
+/* tit_main ========== */
+.filter_edit .article_top .tit_main {
+	height: 28px;
+	line-height: 26px;
+	margin-bottom: 22px;
+	padding-left: 35px;
+	font-size: 1.385em;
+	font-weight: bold;
+	color: #333;
+	background: url("/omsc/jti/images/ic_title.png") no-repeat 0 0;
+}
+
+/* area_btn ========== */
+.filter_edit .article_top .area_btn {
+	
+}
+
+.filter_edit .article_top .area_btn .btn_add_big {
+	display: block;
+	text-align: center;
+	background: #8b8b8b;
+}
+
+.filter_edit .article_top .area_btn .btn_add_big>span {
+	display: inline-block;
+	height: 38px;
+	line-height: 37px;
+	padding-left: 32px;
+	font-size: 1.154em;
+	font-weight: bold;
+	color: #FFF;
+	background: url("/omsc/jti/images/ic_add_big.png") no-repeat 0 center;
+	*zoom: 1;
+}
+
+/* btn_close ========== */
+.filter_edit .article_top .btn_close {
+	position: absolute;
+	right: 15px;
+	top: 17px;
+	width: 27px;
+	height: 27px;
+	text-indent: -9999em;
+	background: url("/omsc/jti/images/btn_close_big.png") no-repeat 0 0;
+}
+
+/* scroll ============================== */
+.filter_edit .wrap_scroll {
+	box-sizing: border-box;
+	border-bottom: 1px solid #DDD;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	bottom: 84px;
+	top: 117px;
+}
+
+.filter_edit .wrap_scroll.copied {
+    box-sizing: border-box;
+    border-bottom: 1px solid #DDD;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 84px;
+    top: 117px;
+    border: green 7px solid;
+}
+
+.filter_edit p.copied {
+    display: none;
+    margin-top: 50%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.filter_edit .wrap_scroll .article_scroll {
+	overflow-y: auto;
+	height: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+
+.filter_edit .wrap_scroll .article_scroll::-webkit-scrollbar {
+	width: 8px;
+	background-color: #EEE;
+}
+
+.filter_edit .wrap_scroll .article_scroll::-webkit-scrollbar-thumb {
+	background-color: #999;
+	border-radius: 10px;
+}
+
+/* filter_list ============================== */
+.filter_edit .filter_list {
+	font-family: "dotum";
+	font-size: 12px;
+}
+
+.filter_edit .filter_list select {
+	width: 90%;
+	height: 32px;
+}
+.filter_edit .filter_list input {
+	height: 28px;
+}
+
+.filter_edit .filter_list .filter_top {
+	padding: 20px 0;
+	border-bottom: 1px dotted #CCC;
+}
+
+.filter_edit .filter_list .filter_add_list {
+	
+}
+
+.filter_edit .filter_list .filter_add_list .filter_add {
+	clear: both;
+	position: relative;
+	margin-top: 5px;
+	padding: 5px 0 18px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.filter_edit .filter_list .filter_add_list .filter_add .btn_close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 12px;
+	height: 11px;
+	text-indent: -9999em;
+	background: url("/omsc/jti/images/btn_close.png") no-repeat 0 0;
+}
+
+/*  */
+.filter_edit .filter_list .filter_add_list .filter_add .group_label {
+	margin: 17px 0 -7px;
+}
+
+.filter_edit .filter_list .filter_add_list .filter_add .group_label label
+	{
+	display: block;
+	width: 100%;
+	height: 23px;
+}
+
+/*  */
+.form_case1 {
+	margin-top: 2px;
+}
+
+.form_case1 select.cate1 {
+	width: 30%;
+}
+
+.form_case1 input.cate2 {
+	width: 68%;
+}
+
+/* filter_list ============================== */
+.filter_edit .filter_data {
+	margin-top: 32px;
+	font-family: "dotum";
+	font-size: 12px;
+}
+
+.filter_edit .filter_data ul {
+	
+}
+
+.filter_edit .filter_data ul li {
+	position: relative;
+	margin-top: 20px;
+	padding: 10px 0;
+	border-bottom: 1px dotted #CCC;
+}
+
+.filter_edit .filter_data ul li .tit {
+	padding-left: 15px;
+	background: url("/omsc/jti/images/bul_bar_gry_5.gif") no-repeat 0 7px;
+}
+
+.filter_edit .filter_data ul li .btn_close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 12px;
+	height: 11px;
+	text-indent: -9999em;
+	background: url("/omsc/jti/images/btn_close.png") no-repeat 0 0;
+}
+
+/* 하단버튼 ============================== */
+.filter_edit .btm_btn {
+	overflow: hidden;
+	position: absolute;
+	z-index: 100;
+	bottom: -20px;
+	padding: 20px 20px 20px 20px;
+	width: 87%;
+	height: 64px;
+	border-top: 1px solid #e3e7ee;
+	background: #f5f5f5;
+	border-right: 1px solid #999;
+}
+
+.filter_edit .btm_btn a {
+	display: block;
+	height: 38px;
+	line-height: 37px;
+	font-size: 1.15em;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	background: #007a58;
+}
+
+/* form ============================== */
+.filter-range {
+	margin-bottom: 10px;
+}
+
+input.inp_pariod {
+	width: 108px;
+}
+
+.filter_edit .filter {
+	margin: 7px 0 0 0;
+}
+
+.filter_edit .filter .tier {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.filter_edit .filter .tier:first-child {
+	border-bottom: 1px solid black;
+}
+
+.filter_edit .filter .tier>li {
+	line-height: 27px;
+	margin: 8px;
+	width: 37px;
+	border: 1px solid #00674E;
+	float: left;
+	color: white;
+	background: #00674E;
+	text-align: center;
+	cursor: pointer;
+}
+
+.filter_edit .filter .tier>li:hover {
+	border: 1px solid yellow;
+	color: black;
+	background: yellow;
+}
+
+.filter_edit .filter .tier>li.on {
+	border: 1px solid yellow;
+	color: black;
+	background: yellow;
+}
+
+.filter_edit #paste_space {
+	display: none;
+	position: fixed;
+	width: 304px;
+	height: 100%;
+	top: 113px;
+	opacity: 0;
+}

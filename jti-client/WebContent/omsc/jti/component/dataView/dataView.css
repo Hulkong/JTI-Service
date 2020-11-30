@@ -1,0 +1,345 @@
+/* LAYER - map/data ================================================== */
+
+#dataView {
+    overflow: hidden;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    top: 111px;
+    width: 0;
+    height: 100%;
+    background: #FFF;
+    border-left: 1px solid #999;
+}
+
+#dataView>.blackShadow {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* section_top ============================== */
+
+#dataView .section_top {
+    position: absolute;
+    width: 100%;
+}
+
+#dataView .tit_main {
+    position: relative;
+    margin: 0 0 0 18px;
+    border-bottom: 1px solid #222;
+}
+
+#dataView .tit_main .tit {
+    font-size: 20px;
+    font-weight: bold;
+    color: #231f20;
+    padding: 10px 10px 10px 0;
+}
+
+#dataView .tit_main .btn_size {
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999em;
+    cursor: pointer;
+}
+
+#dataView .tit_main .btn_size.wide {
+    background: url("/omsc/jti/images/layer_btn_size_wide.png") no-repeat 0 0;
+}
+
+#dataView .tit_main .btn_size.normal {
+    background: url("/omsc/jti/images/layer_btn_size_normal.png") no-repeat 0 0;
+}
+
+/* top_filter ============================== */
+
+#dataView .top_filter {
+    position: relative;
+    margin: 15px 0 0 18px;
+}
+
+#dataView .top_filter:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* area_lft */
+
+#dataView .top_filter .area_lft {
+    float: left;
+}
+
+#dataView .top_filter .area_lft .btn_chk {
+    display: none;
+    margin-right: 10px;
+    font-size: 1.154em;
+    font-weight: bold;
+    color: #333;
+}
+
+#dataView .top_filter .area_lft .layer_chk {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #666;
+    background: #FFF;
+    box-shadow: 0 0 10px #999
+}
+
+#dataView .top_filter .area_lft .layer_chk.on {
+    display: block;
+}
+
+#dataView .top_filter .area_lft .layer_chk label {
+    display: inline-block;
+    margin: 4px 10px 4px 0;
+}
+
+#dataView .top_filter .area_lft .layer_chk label input {
+    margin-left: 1px;
+}
+
+#dataView .top_filter .area_lft .layer_chk .layer_btm {
+    clear: both;
+    margin-top: 5px;
+    padding-top: 8px;
+    border-top: 1px solid #CCC;
+    text-align: center;
+}
+
+#dataView .top_filter .area_lft .layer_chk .layer_btm .btn_close {
+    display: inline-block;
+    padding: 3px 20px 5px;
+    color: #FFF;
+    background: #666;
+}
+
+/* area_rgt */
+
+#dataView .top_filter .area_rgt {
+    display: none;
+    float: left;
+    margin: 10px;
+}
+
+#dataView.wide .top_filter .area_rgt {
+    float: right;
+}
+
+#dataView .top_filter .area_rgt .inp_src {
+    display: none;
+}
+
+#dataView .top_filter .area_rgt .btn_down {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    font-size: 0.85em;
+    color: #f9f9f9;
+    background: #333;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+/* brd_list ============================== */
+
+#dataView .section_ct {
+    height: 100%;
+    padding: 90px 20px 115px;
+    box-sizing: border-box;
+    padding: 100px 20px 0;
+}
+
+#dataView .section_ct .brd_scroll {
+    overflow: scroll;
+    border: 1px solid #999;
+    height: 75%;
+}
+
+#dataView .section_ct .brd_scroll .slick-viewport::-webkit-scrollbar {
+    width: 8px;
+    background-color: #EEE;
+}
+
+#dataView .section_ct .brd_scroll .slick-viewport::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 10px;
+}
+
+#dataView .section_ct .paginate {
+    clear: both;
+    text-align: center;
+    border: 1px solid #FFF;
+    height: 17%;
+}
+
+#dataView .section_ct .paginate ol {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+#dataView .section_ct .paginate ol li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#dataView .section_ct .paginate ol li strong {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #0b84e2;
+}
+
+#dataView .section_ct .paginate ol li a {
+    width: 28px;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #CCC;
+    color: #666;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#dataView .section_ct .paginate span > a {
+    text-indent: -9999em;
+    width: 28px;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #CCC;
+    color: #666;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#dataView .section_ct .paginate span > a.btn_firs {
+    background: url(/omsc/jti/images/paginate2_btn_firs.gif) no-repeat center center;
+    
+}
+
+#dataView .section_ct .paginate span > a.btn_prev {
+    background: url(/omsc/jti/images/paginate2_btn_prev.gif) no-repeat center center;
+}
+
+#dataView .section_ct .paginate span > a.btn_next {
+    background: url(/omsc/jti/images/paginate2_btn_next.gif) no-repeat center center;
+}
+
+#dataView .section_ct .paginate span > a.btn_last {
+    background: url(/omsc/jti/images/paginate2_btn_last.gif) no-repeat center center;
+}
+
+/* */
+
+#dataView .brd_list thead th {
+    height: 24px;
+    padding: 12px 4px 4px;
+    border: 1px solid #CCC;
+    border-top: none;
+    white-space: nowrap;
+    background: #EEE;
+}
+
+#dataView .brd_list thead tr th:first-child {
+    border-left: none;
+}
+
+#dataView .brd_list tbody tr:hover td {
+    cursor: pointer;
+    background: #e1f0f4;
+}
+
+#dataView .brd_list tbody td {
+    height: 24px;
+    padding: 12px 8px 4px;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+}
+
+#dataView .brd_list tbody tr td:first-child {
+    border-left: none;
+}
+
+/* layer btn 열기, 닫기 ============================== */
+
+#dataView .layer_view_btn .btn {
+    display: block;
+    position: fixed;
+    z-index: 333;
+    top: 50%;
+    margin-top: -51px;
+    width: 15px;
+    height: 102px;
+    text-indent: -9999em;
+}
+
+#dataView .layer_view_btn .btn.open {
+    right: 0;
+    background: url("/omsc/jti/images/layer_side_btn_open.png") no-repeat center center;
+}
+
+#dataView .layer_view_btn .btn.close {
+    right: 300px;
+    background: url("/omsc/jti/images/layer_side_btn_close.png") no-repeat center center;
+}
+
+#dataView.wide .layer_view_btn .btn {
+    display: none;
+}
+
+#dataView .dataform.segment {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    width: 400px;
+    height: 450px;
+    background-color: #fff
+}
+
+#dataView .dataform.segment .pop_contents {
+    overflow-y: auto;
+    height: 300px;
+}
+
+/* 총갯수 추가  */
+
+#dataView .top_filter .area_lft .totCount_txt {
+    font-size: 1.154em;
+    font-weight: bold;
+    color: #333;
+}
+
+#dataView .loadingImg {
+    display: none;
+    position: absolute;
+    left: 47%;
+    top: 40%;
+    z-index: 10000;
+}
+
+#dataView .slick-cell.copied {
+    background: blue;
+    background: rgba(0, 0, 255, 0.2);
+    -webkit-transition: 0.5s background;
+  }

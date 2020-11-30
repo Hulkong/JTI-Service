@@ -1,0 +1,56 @@
+#controlBar {
+    position: inherit;
+    right: 10px;
+    margin: 6px 0 0 0;
+    text-align: center;
+}
+
+#controlBar ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#controlBar ul>li {
+    line-height: 27px;
+    margin-right: 3px;
+    width: 62px;
+    border: 1px solid black;
+    float: left;
+    background: white;
+}
+
+#controlBar ul>li.on {
+    background-color: rgb(90, 174, 255);
+    color: white;
+}
+
+#controlBar ul>li:hover {
+    cursor: pointer;
+}
+
+#controlBar #top1SegLegend {
+    display: none;
+    position: fixed;
+    top: 113px;
+    right: 311px;
+    width: 190px;
+    height: 173px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+#controlBar #top1SegLegend .top {
+    font-weight: bold;
+}
+
+#controlBar #top1SegLegend .content {
+    margin: 10px 0 0 0;
+}
+
+#controlBar #top1SegLegend table {
+width: 100%;    
+}
