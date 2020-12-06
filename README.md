@@ -25,7 +25,7 @@
 
 <br/>
 
-![process_after](./contents/process_after.png)
+![process_after](./contents/process_after.PNG)
 
 <br/><br/>
 
@@ -33,7 +33,7 @@
 
 <br/>
 
-![process_after](./contents/directory_structure.png)
+![process_after](./contents/directory_structure.PNG)
 
 <br/><br/>
 
@@ -68,15 +68,15 @@
 
 ## 실제화면
 
-![jti01](./contents/jti01.png)
-![jti02](./contents/jti02.png)
-![jti03](./contents/jti03.png)
-![jti04](./contents/jti04.png)
-![jti05](./contents/jti05.png)
-![jti06](./contents/jti06.png)
-![jti07](./contents/jti07.png)
-![jti08](./contents/jti08.png)
-![jti09](./contents/jti09.png)
+![jti01](./contents/jti01.PNG)
+![jti02](./contents/jti02.PNG)
+![jti03](./contents/jti03.PNG)
+![jti04](./contents/jti04.PNG)
+![jti05](./contents/jti05.PNG)
+![jti06](./contents/jti06.PNG)
+![jti07](./contents/jti07.PNG)
+![jti08](./contents/jti08.PNG)
+![jti09](./contents/jti09.PNG)
 
 <br/><br/>
 
